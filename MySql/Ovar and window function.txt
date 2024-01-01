@@ -1,0 +1,4 @@
+
+https://learnsql.com/blog/mysql-window-functions-examples/
+
+SELECT user_id, current_value, serial_id, LAG(current_value) OVER( PARTITION BY user_id ORDER BY serial_id ) AS previous_value FROM window_ovar_function;
